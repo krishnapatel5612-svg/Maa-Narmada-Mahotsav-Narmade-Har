@@ -1,0 +1,979 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Inter',sans-serif;
+    background-color: var(--soft-cream);
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+}
+
+#navbar {
+    width: 100%;
+    height: 50px;
+    
+    background:linear-gradient(rgb(240, 145, 145),rgb(223, 154, 154),rgb(228, 226, 222));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+#hedding {
+    color: rgb(255, 102, 0);
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+#navbar nav .links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+#navbar nav .links li a:hover {
+    color: rgb(255, 102, 0);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#sambodhan {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(255, 64, 0);
+    margin: 15px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+ #sambodhan button {
+    color: #ffffff;
+    background-color: rgb(0, 0, 255);
+    border-style: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 30px;
+    transition: all 1s ease;
+} 
+
+#sambodhan button:hover {
+    transform: scale(1.1);
+}
+
+/* <!-- =================== Navbar css code end here =================== --> */
+
+#home_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background:linear-gradient(rgb(224, 15, 15),rgb(146, 53, 53),rgb(182, 157, 157)); */
+    color: white;
+    padding-top: 30px;
+
+    background:linear-gradient(-45deg,#24243e,#0f4c81,rgb(189, 16, 16),rgb(130, 4, 4));
+    background-size: 200% 200%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+#cantent h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+#cantent #jayanti {
+    color: rgb(236, 117, 20);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#cantent button  {
+    width: 30%;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    list-style: none;
+    transition: all 1s ease;
+}
+
+#cantent button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+    font-size: 13px;
+}
+
+.rounded_line {
+    width: 15%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 20px auto;
+}
+#para_1 {
+    font-size: 10px;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+}
+
+#para_5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* <!-- =================== home page css code end here =================== --> */
+
+#second_page,
+#fourth_page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background:linear-gradient(rgb(209, 156, 156),rgb(219, 200, 166),rgb(210, 210, 165));
+}
+
+.image {
+    width: 90%;
+    height: 50vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background: linear-gradient(rgb(205, 110, 86), rgb(245, 236, 236));
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.image img {
+    width: 150px;
+    margin-bottom: 20px;
+    mix-blend-mode: multiply;
+}
+
+.image p {
+    font-style: italic;
+}
+
+.box{
+    width: 250px;
+    height: 125px;
+    position: absolute;
+    bottom: 35%;
+    right: 20px;
+    background-color: white;
+
+
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    border-top: 4px solid #ff7f27;   
+}
+
+#know {
+    /* color: #888; */
+    margin: 0 0 10px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box p {
+    font-style: italic;
+    font-family: 'Inter',sans-serif;
+    /* color: #444; */
+}
+
+.text_portion {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+}
+
+.text_portion #mythology {
+    color: brown;
+    font-weight: bold;
+}
+
+.text_portion h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2.5px 1px 0px gray;
+}
+
+.text_portion p {
+    color: #333;
+}
+
+/* <!-- =================== Second page css code end here =================== --> */
+
+#third_page,
+#fifth_page {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 229, 180);
+    /* background:linear-gradient(rgb(209, 156, 156),rgb(219, 200, 166),rgb(210, 210, 165)); */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#third_page div h1 {
+    margin-top: 28%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#shlokas {
+    text-shadow: 2.5px 1px 0px gray;
+}
+
+#hedline {
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5%;
+    text-transform: uppercase;
+    color:#444;
+}
+
+.box_1 {
+    width: 30%;
+    height: 220px;
+    border-left: 4px solid #ff6600;
+    border-radius: 2pc;
+    background: linear-gradient(to right, rgb(255, 176, 67), rgb(243, 241, 235));   
+    position: absolute;
+    left: 13%;
+    top: 25%;
+}
+
+.box_1 h3 {
+    padding: 10% 0% 0% 17%;
+    color: rgb(3, 3, 179);
+}
+
+.titel {
+    padding: 30px 40px;
+    font-style: italic;
+    color: #444;
+}
+
+.box_2 {
+    width: 30%;
+    height: 220px;
+    border-radius: 2pc;
+    border-left: 4px solid #ff6600;
+    background: linear-gradient(to right, rgb(255, 176, 67), rgb(243, 241, 235));   
+    position: absolute;
+    left: 13%;
+    bottom: 10%;
+}
+
+.box_2 h3 {
+    padding: 10% 0% 0% 11%;
+    color: rgb(3, 3, 179);
+}
+
+.box_3 {
+    width: 30%;
+    height: 220px;
+    border-left: 4px solid #ff6600;
+    border-radius: 2pc;
+    background: linear-gradient(to right, rgb(255, 176, 67), rgb(243, 241, 235));   
+    position: absolute;
+    right: 13%;
+    top: 25%;
+}
+
+.box_3 h3 {
+    padding: 10% 0% 0% 14%;
+    color: rgb(3, 3, 179);
+}
+
+.box_4 {
+    width: 30%;
+    height: 220px;
+    border-left: 4px solid #ff6600;
+    border-radius: 2pc;
+    background: linear-gradient(to right, rgb(255, 176, 67), rgb(243, 241, 235));   
+    position: absolute;
+    right: 13%;
+    bottom: 10%;
+}
+
+.box_4 h3 {
+    padding: 10% 0% 0% 13.5%;
+    color: rgb(3, 3, 179);
+}
+
+/* <!-- =================== Third page css code end here =================== --> */
+
+/* #fourth_page {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(209, 156, 156),rgb(219, 200, 166),rgb(210, 210, 165));
+    position: relative;
+} */
+
+#fourth_page h1 {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 3.5%;
+    text-shadow: 2.5px 1px 0px gray;
+}
+
+#pujan_vidhi {
+    width: 1100px;
+    height: 520px;
+    border-radius: 2pc;
+    background:linear-gradient(rgb(212, 185, 159), rgb(249, 242, 235), rgb(199, 191, 180));
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    left: 13.5%;
+}
+
+#steps {
+    padding-top: 5%;
+    color: rgb(12, 12, 147);
+}
+
+#pujan_vidhi ul p {
+    padding-top: 5px;
+    color: #444;
+}
+
+#pujan_vidhi ul {
+  list-style: none;
+  padding-left: 30px;
+  margin-left: 20px;
+  position: relative;
+}
+
+#pujan_vidhi ul li {
+    position: relative;
+}
+
+#pujan_vidhi ul li::before{
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 55%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ff8400;
+    z-index: 2;
+}
+
+/* <!-- =================== fourth page css code end here =================== --> */
+
+/* #fifth_page {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 229, 180);
+    display: flex;
+    justify-content: center;
+    position: relative;
+} */
+
+#ghats h1 {
+    margin-top: 11%;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2.5px 1px 0px gray;
+}
+
+#box_1 {
+    width: 35%;
+    height: 200px;
+    text-align: center;
+    border-radius: 0.5pc;
+    background-color: rgba(255, 255, 255, 0.581);   
+    position: absolute;
+    padding-top: 5.5%;
+    left: 12.5%;
+    top: 24%;
+}
+
+#box_1:active {
+    border-bottom: 4px solid orange;
+    transition: 0.1s;
+}
+
+#box_2 {
+    width: 35%;
+    height: 200px;
+    text-align: center;
+    border-radius: 0.5pc;
+    background-color: rgba(255, 255, 255, 0.581);
+    position: absolute;
+    padding-top: 5.5%;
+    left: 12.5%;
+    bottom: 11%;
+}
+
+#box_2:active {
+    border-bottom: 4px solid orange;
+    transition: 0.1s;
+}
+
+#box_3 {
+    width: 35%;
+    height: 200px;
+    text-align: center;
+    border-radius: 0.5pc;
+    background-color: rgba(255, 255, 255, 0.581);
+    position: absolute;
+    padding-top: 5.5%;
+    right: 12.5%;
+    top: 24%;
+}
+
+#box_3:active {
+    border-bottom: 4px solid orange;
+    transition: 0.1s;
+}
+
+#box_4 {
+    width: 35%;
+    height: 200px;
+    text-align: center;
+    border-radius: 0.5pc;
+    background-color: rgba(255, 255, 255, 0.581);   
+    position: absolute;
+    padding-top: 5.5%;
+    right: 12.5%;
+    bottom: 11%;
+}
+
+#box_4:active {
+    border-bottom: 4px solid orange;
+    transition: 0.1s;
+}
+
+.sthal {
+    padding: 15px 55px;
+    color: #444;
+}
+
+#box_1 i {
+    position: absolute;
+    top: 30px;
+    left: 245px;
+    font-size: 34px;
+}
+
+#box_2 i {
+    position: absolute;
+    top: 30px;
+    left: 245px;
+    font-size: 34px;
+}
+
+#box_3 i {
+    position: absolute;
+    top: 30px;
+    right: 245px;
+    font-size: 34px;
+}
+
+#box_4 i {
+    position: absolute;
+    top: 30px;
+    right: 245px;
+    font-size: 34px;
+} 
+
+/* <!-- =================== fifth page css code end here =================== --> */
+
+#sixth_page {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(209, 156, 156),rgb(219, 200, 166),rgb(210, 210, 165));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(109, 0, 111);
+    position: relative;
+}
+
+#sixth_page img {
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 20px;
+}
+
+#sixth_page h1 {
+    font-size: 60px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    text-shadow: 3.5px 1px 0px gray;
+
+}
+
+#shubhkamna {
+    width: 60%;
+    height: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1pc;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 3.2%;
+    line-height: 25px;
+}
+
+#wishes {
+   background-color: rgba(255, 255, 255, 0);
+   text-transform: uppercase;
+   font-style: normal;
+   font-size: 12px;
+   word-spacing: 5px;
+   position: absolute;
+   bottom: 18%;
+}
+
+/* <!-- =================== sixth page css code end here =================== --> */
+
+#footer {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(255, 229, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+} 
+
+#footer h3 {
+    text-transform: uppercase;
+    /* color: #555; */
+}
+
+#footer p {
+    padding-top: 20px;
+    /* color: #777; */
+    font-style: italic;
+}
+
+#emojis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 10%;
+}
+
+#flower {
+    mix-blend-mode: multiply;
+    height: 100px;
+}
+
+#jyoti {
+    mix-blend-mode: multiply;
+    height: 50px;
+}
+
+#river {
+    height: 50px;
+}
+
+#ending {
+    position: absolute;
+    bottom: 20%;
+    font-size: smaller;
+}
+
+#check {
+    display: none;
+}
+
+#bar {
+    display: none;
+}
+
+/* <!-- =================== last page css code end here =================== --> */
+
+
+@media(max-width:450px) {
+
+    #bar {
+        display: block;
+        position: fixed;
+        top: 60px;
+        right: 10px;
+        z-index: 150;
+        color: white;
+    }
+
+    #home_page{
+        height: 50vh;
+    }
+
+    #navbar {
+        width: 100%;
+    }
+
+    #navbar nav ul {
+        display: none;
+    }
+
+    #navbar h1 {
+        font-size: 25px;
+    }   
+
+    #check:checked~#navbar nav ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 50px;
+        background:linear-gradient(rgb(253, 47, 47),rgb(237, 88, 71),rgb(249, 184, 184));
+        text-align: center;
+        line-height: 25px;
+        font-size: large;
+        font-weight: bold;
+        padding: 3%;
+    }
+
+    #sambodhan p {
+        display: none;
+    }
+
+    /* ================= home page end ================= */
+
+    #second_page {
+        height: 50vh;
+        position: relative;
+    }
+
+    .image {
+        width: 80%;
+        height: 20vh;
+        margin-left: 20px;
+        font-size: smaller;
+        position: absolute;
+        top: 25px;
+    }
+
+    .image img {
+        width: 82px;
+        position: absolute;
+        top: 10%;
+    }
+
+    .image h3 {
+        position: absolute;
+        top: 60%;
+    }
+
+    .image p {
+        position: absolute;
+        bottom: 20%;
+        font-size: 12px;
+    }
+
+    .box {
+        width: 30%;
+        height: 16%;
+        font-size: 13px;
+        line-height: 11px;
+        position: absolute;
+        top: 35%;
+        right: 5px;
+        padding: 2px;
+    }
+
+    .box h6{
+        font-size: smaller;
+        margin-top: 3px;
+        margin-bottom: 1px;
+    }
+
+    .box p{
+        font-size: smaller;
+        padding: 0px 2px;
+    }
+
+    .text_portion {
+        height: 30%;
+        font-size: smaller;
+        position: absolute;
+        bottom: 15%;
+        line-height: 15px;
+    }
+
+    /* ================= second page end ================= */
+
+    #third_page {
+        height: 50vh;
+    }
+
+    #third_page div h1 {
+        margin-top: 10%;
+    }
+
+    #hedline {
+        font-size: small;
+        padding-top: 2%;
+    }
+
+    .box_1 {
+        height: 30%;
+    }
+
+    .box_1 h3 {
+        padding: 10%;
+        font-size: 11px;
+    }
+
+    .titel {
+        font-size: 10px;
+        padding: 2px;
+        
+    }
+
+    .box_2 {
+        height: 30%;
+    }
+
+    .box_2 h3 {
+        padding: 10% 0% 10% 6%;
+        font-size: 11px;
+    }
+
+    .box_3 {
+        height: 30%;
+    }
+
+    .box_3 h3 {
+        padding: 10%;
+        font-size: 11px;
+    }
+
+    .box_4 {
+        height: 30%;
+    }
+
+    .box_4 h3 {
+        padding: 10%;
+        font-size: 11px;
+    }
+
+    /* ================= third page end ================= */
+
+    #fourth_page {
+        height: 50vh;
+        position: relative;
+    }
+
+    #fourth_page h1 {
+        padding-top:8%;
+        font-size: 25px;
+    }
+
+    #pujan_vidhi {
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+
+    #steps {
+        font-size: small;
+    }
+
+    #pujan_vidhi ul p {
+        padding: 1%;
+        font-size: 10px;
+    }
+
+    #pujan_vidhi ul ::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        bottom:70px;
+    }
+
+    #pujan_vidhi ul li::before {
+        content: "";
+        position: absolute;
+        left: -12.7%;
+        top: 50%;       
+    }
+    
+    /* ================= fourth page end ================= */
+
+    #fifth_page {
+        height: 50vh;
+    }
+
+    #ghats h1 {
+        margin-top: 10%;
+        font-size: 25px;
+    }
+
+    #hedline {
+        font-size: 10px;
+    }
+
+    #box_1 {
+        height: 30%;
+    }
+
+    #box_2 {
+        height: 30%;
+    }
+
+    #box_3 {
+        height: 30%;
+    }
+
+    #box_4 {
+        height: 30%;
+    }
+
+    .sthal {
+        padding: 10% 2% 0% 2%;
+        font-size: 15px;
+    }
+
+    #box_1 h3 {
+        padding-top: 10%;
+        font-size: 15px;
+        line-height: 5px;
+    }
+
+    #box_2 h3 {
+        padding-top: 10%;
+        font-size: 15px;
+        line-height: 5px;
+    }
+
+    #box_3 h3 {
+        padding-top: 10%;
+        font-size: 15px;
+        line-height: 5px;
+    }
+
+    #box_4 h3 {
+        padding-top: 10%;
+        font-size: 15px;
+        line-height: 5px;
+    }
+
+    #box_1 i {
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        font-size: 20px;
+    }
+
+    #box_2 i {
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        font-size: 20px;
+    }
+
+    #box_3 i {
+        position: absolute;
+        top: 5%;
+        right: 40%;
+        font-size: 20px;
+    }
+
+    #box_4 i {
+        position: absolute;
+        top: 5%;
+        right: 40%;
+        font-size: 20px;
+    }
+
+    /* ================= fifth page end ================= */
+
+    #sixth_page {
+        height: 50vh;
+        position: relative;
+    }
+
+    #sixth_page img {
+        margin-top: -15%;
+    }
+
+    #sixth_page h1 {
+        font-size:20px;
+        position: absolute;
+        top: 37%;
+    }
+
+    #shubhkamna {
+        width: 80%;
+        height: 30%;
+        font-size: 17px;
+        padding: 20px 20px;
+        position: absolute;
+        top: 40%;
+    }
+
+    #wishes {
+        font-size: small;
+        position: absolute;
+        bottom: 13%;
+    }
+
+    /* ================= sixth page end ================= */
+
+    #footer h3 {
+        font-size: 15px;        
+    }
+
+    #footer p {
+        font-size: 12px;
+    }
+
+}
